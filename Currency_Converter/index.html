@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="icon" type="image/x-icon" href="android-chrome-192x192.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Poppins:wght@400;600&display=swap');
+    </style>
+    
+</head>
+
+<body>
+    <nav>
+        <div class="logo">My Currency Converter</div>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="contact">Contact Me</a></li>
+            <li><a target="_blank" href="https://yashmehra.netlify.app/">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Choose A Currency to Convert !!</h1>
+        <form>
+            <h6><label for="quantity">Choose a quantity:</label></h6>
+            <input type="number" name="quantity" min="1" max="100">
+            <br>
+            <h6><label for="base-currency">Choose Your currency:</label></h6>
+            <select name="currency" id="base-currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="BTC">Bitcoin</option>
+                <option value="RUB">Russian Ruble</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="GBP">sterling</option>
+                <option value="SGD">Singapore Dollar</option>
+                <option value="SAR">riyal</option>
+                
+            </select>
+            <br>
+            <h6><label for="target-currency">To Convert To:</label></h6>
+            <select name="currency" id="target-currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="BTC">Bitcoin</option>
+                <option value="RUB">Russian Ruble</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="GBP">sterling</option>
+                <option value="SGD">Singapore Dollar</option>
+                <option value="SAR">riyal</option>
+            </select>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <div class="output">
+            <h2>Your Value is worth</h2>
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <h3>
+            <div class="footer-header">Social Media presence</div>
+        </h3>
+        <br>
+
+        <ul>
+            <h4>
+                <li class="inline-list"><a target="_blank" class="link" href="https://www.linkedin.com/in/yash-mehra-b07362263/"><lord-icon
+                            src="linkedin.webp" trigger="hover" style="height: 65px; width: 66px;">
+                        </lord-icon></a></li>
+                
+                        <li class="inline-list"> <a target="_blank" class="link" href=""><img class="git" src="gmail.webp"></a>
+                </li>
+                <li class="inline-list"> <a target="_blank" class="link" href="https://github.com/YasHHHHm"><img
+                            class="git" src="github.png"></a></li>
+
+
+            </h4>
+        </ul>
+        
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
