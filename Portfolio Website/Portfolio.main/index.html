@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Yash's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header style="width: 100%;">
+        <nav>
+            <div class="page">Yash's Portfolio</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/Portfolio Website/Portfolio.main/index.html">Home</a></li>
+                    <li><a href="/Portfolio Website/Portfolio.projects/index2.html">Projects</a></li>
+                    <li><a href="/Portfolio Website/Portfolio.Skills/index3.html">Skills</a></li>
+                    <li><a href="#footer">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftcontent" style="color: black;" data-aos="fade-right">
+                Hi, My name is <span class="purple">Yash</span>
+                <div style="color: black;">and I am a Passionate</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <a class="btn" target="_blank"
+                        href="https://drive.google.com/file/d/1DtrALb2M75IaqPNKwsLuSmi-aENonqrT/view?usp=sharing">Download
+                        Resume
+                    </a>
+                    <a class="btn" target="_blank" href="https://github.com/YasHHHHm">Visit Github</a>
+                </div>
+
+            </div>
+            <div class="rightcontent">
+                <img src="/Portfolio Website/pngs/bg.png.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection" data-aos="fade-up" id="About">
+            <span class="text-grey">Education & information</span>
+            <h1 style="color: black;">About Me</h1>
+
+            <div class="timeline">
+                <div class="container left" data-aos="fade-right">
+                    <div class="content">
+                        <h2>2019</h2>
+                        <p>Secondary Examination from
+                            Ryan International Public School, Mumbai</p>
+                    </div>
+                </div>
+
+                <div class="container right" data-aos="fade-left">
+                    <div class="content">
+                        <h2>2021</h2>
+                        <p>Senior School Certificate Examination from
+                            Ramsheth Thakur Public School, Mumbai</p>
+                    </div>
+                </div>
+
+                <div class="container left" data-aos="fade-right">
+                    <div class="content">
+                        <h2>2021-2025</h2>
+                        <p>Btech Computer Science Engeenering from JEMTEC, Greater Noida affiliated to GGSIPU</p>
+                    </div>
+                </div>
+
+                <div class="container right" data-aos="fade-left">
+                    <div class="content">
+                        <h2>Certification</h2>
+                        <p>Completed My Java Fullstack-Development Course from Aptron Institute, Noida</p>
+                    </div>
+                </div>
+
+                <div class="container left" data-aos="fade-right">
+                    <div class="content">
+                        <h2>Languages</h2>
+                        <p>Learned C, C++, Python, SQL, HTML, CSS, & Java-Script alongside</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer" id="footer">
+
+        <h3>
+            <div class="footer-header">Social Media presence</div>
+        </h3>
+
+        <br>
+
+        <ul>
+            <h4>
+                <li class="inline-list"> 
+                    <a target="_blank" class="linh" href="https://www.linkedin.com/in/yashmehra04/">
+                        <img class="git" src="/Portfolio Website/pngs/linkedin.png">
+                    </a>
+                </li>
+
+                <li class="inline-list"> 
+                    <a target="_blank" class="link" href="mailto:yashmehra0410@gmail.com?subject=Subject: had a query about<add topic>&body=Hi Yash, I am writing this mail <add message>.">
+                        <img class="git" src="/Portfolio Website/pngs/gmail.webp">
+                    </a>
+                </li>
+
+                <li class="inline-list"> 
+                    <a target="_blank" class="link" href="https://github.com/YasHHHHm">
+                        <img class="git" src="/Portfolio Website/pngs/github.png">
+                    </a>
+                </li>
+            </h4>
+        </ul>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 300
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    color: #210B2C;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    overflow: hidden;
+    transition: .2s linear !important;
+    background-color: #FFFAE5;
+}
+
+
+
+
+
+/* Nav Section*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+    background-color: rgb(16 16 16);
+    padding: 0 20px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: rgb(46, 46, 46);
+    transition: all 0.5s;
+}
+
+nav a:active{
+    color: rgb(46, 46, 46);
+}
+
+.page {
+    font-size: 2.9rem;
+    color: white;
+}
+
+
+
+
+
+/* Skills Section */
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 120rem;
+    min-height: 100vh;
+
+}
+
+.heading {
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.skills {
+    background-color: black;
+}
+
+.skills .heading {
+    margin-top: 0;
+}
+
+.skills .heading span {
+    color: #FFFAE5;
+}
+
+.skills .skill-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.skills .skill-box .skill {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 0;
+    margin: 1rem;
+}
+
+.skills .skill-box .skill img {
+    height: 20rem;
+    transition: .2s linear;
+}
+
+.skills .skill-box .skill::before {
+    content: '';
+    background-color: #FFFAE5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20rem;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1rem;
+}
+
+.skills .skill-box .skill:hover img {
+    transform: translateY(-2rem);
+}
+
+.skills .skill-box .skill h3 {
+    font-size: 3rem;
+    padding: 1rem auto;
+}
+
+.skills .skill-box .skill p {
+    font-size: 1.5rem;
+    padding: .5rem;
+    margin-top: .5rem;
+    text-align: justify;
+}
+
+
+
+
+
+/* Footer Section */
+footer {
+    width: 100%;
+    background-color: #141411;
+
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-header{
+    color: white;
+    font-size: 18.72px;
+    font-family: "poppins", sans-serif;
+}
+
+.footer .link {
+    color: white;
+}
+
+.git {
+    height: 50px;
+    width: 50px;
+}
+
+.inline-list {
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1620px) {
+    section {
+        width: 60%;
+
+    }
+}
+
+@media (max-width:1120px) {
+    
+}
+
+@media (max-width:950px) {
+
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (max-width:920px) {
+
+    html {
+        font-size: 65%;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    section {
+        padding: 0 20px;
+        width: 50%;
+
+    }
+
+    .skills {
+        padding: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    section {
+        width: 40%;
+
+    }
+}
+
+@media (max-width:535px) {
+    nav {
+        width: 100%;
+    }
+}
+
+@media (max-width:655px) {
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        line-height: 29px;
+        align-items: left;
+    }
+}
+@media (max-width: 855px) {
+    nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+        nav {
+            width: 100%;
+        }
+    
+        .page {
+            font-size: 2.3rem;
+        }
+
+        nav ul{
+            align-items: start;
+        }
+    
+        nav ul li a {
+            font-size: 16px;
+        }
+}
+
+@media (max-width: 455px) {
+    nav ul {
+        flex-direction: column;
+        line-height: 100vh
+    }
+}
+
+@media (max-width:940px) {
+    nav {
+        width: 100%;
+        height: 39vh;
+        right: 0;
+    }
+}
